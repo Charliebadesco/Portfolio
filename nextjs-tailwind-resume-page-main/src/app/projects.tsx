@@ -83,6 +83,29 @@ export function Projets() {
               Deux portfolio utilisant Next.js et React
             </Typography>
           </div>
+          <div className="bg-gray-800 text-gray-300 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+            <a href="https://github.com/Charliebadesco/JavaFXgame"target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/image/project4.png"
+              alt="Project 4"
+              width={500}
+              height={300}
+              className="rounded-lg"
+            />
+            </a>
+            <Typography
+              variant="h4"
+              className="mt-4 text-center text-gray-200 font-semibold"
+            >
+             Projet 3
+            </Typography>
+            <Typography
+              variant="small"
+              className="text-center mt-2 text-gray-400"
+            >
+              Un essai de jeu JavaFX avec initialisation d'un gameLoop et Animations d'un personnage controllable.
+            </Typography>
+          </div>
         </div>
       </div>
     </section>
