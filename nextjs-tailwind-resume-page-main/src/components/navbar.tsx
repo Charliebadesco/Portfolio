@@ -2,23 +2,28 @@ import React from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
-  Button,
   IconButton,
   Typography,
 } from "@material-tailwind/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
-const NAV_MENU = ["Home", "About Us", "Contact Us"];
+const NAV_MENU = [
+  { name: "About me", href: "#hero" },
+  { name: "Éducation", href: "#education-section" },
+  { name: "Expériences", href: "#experience-section" },
+  { name: "Compétences", href: "#skills-section" },
+  { name: "Mes projets", href: "#projets" },
+];
 
-function NavItem({ children }: { children: React.ReactNode }) {
+function NavItem({ children, href }: { children: React.ReactNode; href: string }) {
   return (
     <li>
       <Typography
         as="a"
-        href="#"
+        href={href}
         variant="paragraph"
         color="gray"
-        className="flex items-center gap-2 font-medium text-gray-900"
+        className="flex items-center gap-2 font-medium text-gray-900 hover:text-blue-500 transition-colors"
       >
         {children}
       </Typography>
@@ -51,15 +56,17 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           as="a"
-          href="https://www.material-tailwind.com"
-          target="_blank"
+          href="#"
           color="blue-gray"
           className="text-lg font-bold"
         >
+          Mon Portfolio
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map((nav) => (
-            <NavItem key={nav}>{nav}</NavItem>
+            <NavItem key={nav.name} href={nav.href}>
+              {nav.name}
+            </NavItem>
           ))}
         </ul>
         <IconButton
@@ -75,6 +82,15 @@ export function Navbar() {
           )}
         </IconButton>
       </div>
+      <Collapse open={open} className="lg:hidden">
+        <ul className="flex flex-col items-start gap-4 p-4">
+          {NAV_MENU.map((nav) => (
+            <NavItem key={nav.name} href={nav.href}>
+              {nav.name}
+            </NavItem>
+          ))}
+        </ul>
+      </Collapse>
     </MTNavbar>
   );
 }

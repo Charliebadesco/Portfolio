@@ -4,7 +4,7 @@ import { Typography } from "@material-tailwind/react";
 import {
   AcademicCapIcon,
   BriefcaseIcon,
-  FireIcon,
+  FaceSmileIcon,
 } from "@heroicons/react/24/solid";
 import InfoCard from "@/components/info-card";
 
@@ -69,36 +69,52 @@ const EXPERIENCE = [
 
 const SKILLS = [
   {
-    icon: FireIcon,
-    title: "Front-End Frameworks",
+    icon: FaceSmileIcon,
+    title: "Développement FullStack",
     date: "Compétences Techniques",
-    children: "Maîtrise de frameworks front-end tels que React.",
+    children: "Maîtrise de frameworks front-end tels que React, conpréhension du fonctionnement des bases de données, Expérientations dans tout type de technologies informatiques",
   },
   {
-    icon: FireIcon,
-    title: "Responsive Web Design",
+    icon: FaceSmileIcon,
+    title: "Appétence pour l'OOP",
     date: "Compétences Techniques",
-    children: "Création de designs responsifs avec CSS Grid et Flexbox.",
+    children: "Bonne intégration des langages orientés objets, compétences en C++, Java, PhP"
   },
   {
-    icon: FireIcon,
-    title: "Attention to Detail",
+    icon: FaceSmileIcon,
+    title: "Rigueur d'apprentissage et passion",
     date: "Compétences Organisationnelles",
-    children: "Grande rigueur dans le développement et la conception UI.",
+    children: "rigueur et rapidité dans l'apprentissage",
   },
   {
-    icon: FireIcon,
-    title: "Time Management",
+    icon: FaceSmileIcon,
+    title: "Gestion de projets",
     date: "Compétences Organisationnelles",
-    children: "Gestion efficace du temps pour respecter les délais.",
+    children: "Gestion efficace du temps pour respecter les délais. Bonne capacité à jongler entre les taches",
   },
+  {
+  icon: FaceSmileIcon,
+    title: "Travail en Equipe",
+    date: "Compétences Organisationnelles",
+    children: "Capacité à travailler en équipe",
+  },
+  {
+    icon: FaceSmileIcon,
+      title: "Fibre artistique",
+      date: "Compétences personnelles",
+      children: "Appétence pour les loisirs artistiques, le dessin, la musique et les arts manuels",
+    },
 ];
 
 export function InformationSection() {
   return (
-    <section className="pb-28 px-8 bg-gray-900 text-gray-100">
+    <section
+      id="education" // Identifiant principal pour InformationSection
+      className="pb-28 px-8 bg-gray-900 text-gray-100"
+    >
       <div className="grid xl:grid-cols-2 md:grid-cols-1 container gap-20 mx-auto items-start">
-        <div>
+        <div id="education-section">
+          {/* Ajout de l'id "education-section" */}
           <Typography
             color="gray"
             className="mb-6 text-3xl font-bold text-gray-300"
@@ -111,7 +127,8 @@ export function InformationSection() {
             ))}
           </div>
         </div>
-        <div>
+        <div id="experience-section">
+          {/* Ajout de l'id "experience-section" */}
           <Typography
             color="gray"
             className="mb-6 text-3xl font-bold text-gray-300"
@@ -125,7 +142,8 @@ export function InformationSection() {
           </div>
         </div>
       </div>
-      <div className="container mt-36 mx-auto">
+      <div id="skills-section" className="container mt-36 mx-auto">
+        {/* Ajout de l'id "skills-section" */}
         <Typography
           color="gray"
           className="mb-6 text-3xl font-bold text-gray-300"
@@ -144,5 +162,6 @@ export function InformationSection() {
     </section>
   );
 }
+
 
 export default InformationSection;

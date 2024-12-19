@@ -12,7 +12,7 @@ import {
 
 function Hero() {
   return (
-    <section className="container mx-auto px-8 py-10 bg-gray-900 text-gray-100" style={{"maxWidth": "100%"}}>
+    <section id="hero" className="container mx-auto px-8 py-10 bg-gray-900 text-gray-100" style={{"maxWidth": "100%"}}>
       <Card shadow={false} className="border border-gray-700 rounded-2xl bg-gray-800">
         <CardHeader shadow={false} className="h-60 !rounded-lg">
           <img
@@ -28,7 +28,7 @@ function Hero() {
             <div className="flex items-center gap-3">
               <Avatar src="image/avatar1.png" alt="avatar" variant="rounded" />
               <div>
-                <Typography variant="h6" color="gray">
+                <Typography variant="h6" color="white">
                   Charlie Badesco
                 </Typography>
                 <Typography
@@ -37,9 +37,17 @@ function Hero() {
                 >
                   charlotte.badesco@gmail.com
                 </Typography>
+                <Typography
+                  variant="small"
+                  className="font-normal text-gray-500"
+                >
+                  Lyon 69007 _véhiculée
+                </Typography>
               </div>
             </div>
+            
             <div className="flex flex-wrap items-center gap-2">
+            <a href="https://github.com/Charliebadesco" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="outlined"
                 className="border-gray-600 text-gray-300 flex items-center gap-2"
@@ -47,6 +55,8 @@ function Hero() {
                 <i className="fa fa-github text-base" />
                 Github
               </Button>
+              </a>
+              <a href="https://www.linkedin.com/in/charlie-badesco-2a25441ab/"target="_blank" rel="noopener noreferrer">
               <Button
                 variant="outlined"
                 className="border-gray-600 text-gray-300 flex items-center gap-2"
@@ -54,7 +64,9 @@ function Hero() {
                 <i className="fa-brands fa-linkedin" />
                 LinkedIn
               </Button>
+              </a>
             </div>
+            
           </div>
           <Typography
             variant="small"
