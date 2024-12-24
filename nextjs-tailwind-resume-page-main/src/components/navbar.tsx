@@ -24,6 +24,9 @@ function NavItem({ children, href }: { children: React.ReactNode; href: string }
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900 hover:text-blue-500 transition-colors"
+        placeholder="" 
+              onPointerEnterCapture={() => {}} 
+               onPointerLeaveCapture={() => {}}
       >
         {children}
       </Typography>
@@ -52,6 +55,9 @@ export function Navbar() {
       shadow={false}
       color="white"
       className="sticky top-0 z-50 border-0"
+      placeholder="" 
+              onPointerEnterCapture={() => {}} 
+               onPointerLeaveCapture={() => {}}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
@@ -59,6 +65,9 @@ export function Navbar() {
           href="#"
           color="blue-gray"
           className="text-lg font-bold"
+          placeholder="" 
+              onPointerEnterCapture={() => {}} 
+               onPointerLeaveCapture={() => {}}
         >
           Mon Portfolio
         </Typography>
@@ -74,6 +83,9 @@ export function Navbar() {
           color="gray"
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
+          placeholder="" 
+              onPointerEnterCapture={() => {}} 
+               onPointerLeaveCapture={() => {}}
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />

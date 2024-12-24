@@ -130,6 +130,9 @@ export function InformationSection() {
           <Typography
             color="gray"
             className="mb-6 text-3xl font-bold text-gray-300"
+            placeholder="" 
+            onPointerEnterCapture={() => {}} 
+             onPointerLeaveCapture={() => {}}
           >
             Éducation et Certifications
           </Typography>
@@ -144,6 +147,9 @@ export function InformationSection() {
           <Typography
             color="gray"
             className="mb-6 text-3xl font-bold text-gray-300"
+            placeholder="" 
+            onPointerEnterCapture={() => {}} 
+             onPointerLeaveCapture={() => {}}
           >
             Expériences
           </Typography>
@@ -159,10 +165,19 @@ export function InformationSection() {
         <Typography
           color="gray"
           className="mb-6 text-3xl font-bold text-gray-300"
+          placeholder="" 
+          onPointerEnterCapture={() => {}} 
+           onPointerLeaveCapture={() => {}}
         >
           Compétences
         </Typography>
-        <Typography variant="lead" className="!text-gray-400 mb-10">
+        <Typography 
+        variant="lead" 
+        className="!text-gray-400 mb-10"
+        placeholder="" 
+        onPointerEnterCapture={() => {}} 
+         onPointerLeaveCapture={() => {}}
+         >
           Mes compétences techniques et organisationnelles :
         </Typography>
         <div className="container mx-auto grid grid-cols-1 gap-16 lg:grid-cols-2">
