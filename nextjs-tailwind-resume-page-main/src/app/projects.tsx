@@ -9,13 +9,7 @@ export function Projets() {
     <section  id="projets" className="py-12 px-8 lg:py-24 bg-gray-900 text-gray-100">
       <div className="container max-w-screen-lg mx-auto">
         <div className="text-center mb-16">
-          <Typography 
-          variant="h2" 
-          className="text-gray-300 font-bold"
-          placeholder="" 
-          onPointerEnterCapture={() => {}} 
-           onPointerLeaveCapture={() => {}}
-           >
+          <Typography variant="h2" className="text-gray-300 font-bold">
             Mes Projets
           </Typography>
         </div>
@@ -33,18 +27,12 @@ export function Projets() {
             <Typography
               variant="h4"
               className="mt-4 text-center text-gray-200 font-semibold"
-              placeholder="" 
-              onPointerEnterCapture={() => {}} 
-               onPointerLeaveCapture={() => {}}
             >
               Projet 1
             </Typography>
             <Typography
               variant="small"
               className="text-center mt-2 text-gray-400"
-              placeholder="" 
-              onPointerEnterCapture={() => {}} 
-               onPointerLeaveCapture={() => {}}
             >
               Un automate Cellulaire en C++
             </Typography>
@@ -62,18 +50,12 @@ export function Projets() {
             <Typography
               variant="h4"
               className="mt-4 text-center text-gray-200 font-semibold"
-              placeholder="" 
-              onPointerEnterCapture={() => {}} 
-               onPointerLeaveCapture={() => {}}
             >
               Projet 2
             </Typography>
             <Typography
               variant="small"
               className="text-center mt-2 text-gray-400"
-              placeholder="" 
-              onPointerEnterCapture={() => {}} 
-               onPointerLeaveCapture={() => {}}
             >
               Un automate Cellulaire en Rust
             </Typography>
@@ -91,18 +73,12 @@ export function Projets() {
             <Typography
               variant="h4"
               className="mt-4 text-center text-gray-200 font-semibold"
-              placeholder="" 
-              onPointerEnterCapture={() => {}} 
-               onPointerLeaveCapture={() => {}}
             >
              Projet 3
             </Typography>
             <Typography
               variant="small"
               className="text-center mt-2 text-gray-400"
-              placeholder="" 
-              onPointerEnterCapture={() => {}} 
-               onPointerLeaveCapture={() => {}}
             >
               Deux portfolio utilisant Next.js et React
             </Typography>
@@ -120,18 +96,12 @@ export function Projets() {
             <Typography
               variant="h4"
               className="mt-4 text-center text-gray-200 font-semibold"
-              placeholder="" 
-              onPointerEnterCapture={() => {}} 
-               onPointerLeaveCapture={() => {}}
             >
              Projet 3
             </Typography>
             <Typography
               variant="small"
               className="text-center mt-2 text-gray-400"
-              placeholder="" 
-              onPointerEnterCapture={() => {}} 
-               onPointerLeaveCapture={() => {}}
             >
               Un essai de jeu JavaFX avec initialisation d'un gameLoop et Animations d'un personnage controllable.
             </Typography>
