@@ -39,12 +39,13 @@ function Hero() {
     onPointerEnterCapture={() => {}}
     onPointerLeaveCapture={() => {}}
     >
+      
       <Image
-        width={100%}
-        src="/image/strip.jpg"
-        alt="bannière"
-        className="w-full h-full object-cover object-center"
+      src="/image/strip.jpg"
+      alt="bannière"
+      className="w-full h-full object-cover object-center"
       />
+
     </CardHeader>
     <CardBody
     placeholder=""
@@ -54,10 +55,9 @@ function Hero() {
       <div className="flex lg:gap-0 gap-6 flex-wrap justify-between items-center">
         <div className="flex items-center gap-3">
           <Image
-            src="./image/avatar2.png"
+            src="/image/avatar2.png"
             alt="avatar"
-            width={200}
-            className="rounded-full"
+            className="w-200,  rounded-full"
           />
           <div>
             <Typography 

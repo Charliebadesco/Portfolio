@@ -1,17 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   webpack: (config) => {
-    config.module.rules.push({
-      test: /\.(js|jsx|ts|tsx)$/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-react', '@babel/preset-env'],
-        },
-      },
-    });
+    config.cache = false;
     return config;
   },
-};
-
-module.exports = nextConfig;
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
+  };
+  
